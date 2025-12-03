@@ -1630,12 +1630,11 @@ body {
 }
 
 .about-icon {
-  font-size: 60px;
-  margin-bottom: 20px;
-  filter: drop-shadow(0 0 20px rgba(37, 99, 235, 0.5));
-  animation: logoFloat 3s ease-in-out infinite;
-  position: relative;
-  z-index: 1;
+  width: 100%;
+  display: flex;
+  justify-content: center;   /* وسط افقی */
+  align-items: center;       /* وسط عمودی */
+  margin-top: 10px;          /* فاصله از بالا (دلخواه) */
 }
 
 @media (max-width: 768px) {
@@ -1725,6 +1724,21 @@ body {
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
   }
+  .about-icon {
+  width: 100%;
+  display: flex;
+  justify-content: center;   /* وسط افقی */
+  align-items: center;       /* وسط عمودی */
+  margin-top: 10px;          /* فاصله از بالا (دلخواه) */
+}
+
+.about-icon img {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  display: block;
+}
+
 }
 </style>
   <style>@view-transition { navigation: auto; }</style>
@@ -1752,8 +1766,8 @@ body {
      </div>
      <div class="logo-glow"></div>
     </div>
-    <div class="company-name" id="companyName" data-text="   شرکت اسیا تابان اریا">
-     شرکت  آسیا تابان آریا
+    <div class="company-name" id="companyName" data-text="   صنایع بسته بندی آسیا تابان آریا">
+     صنایع بسته بندی آسیا تابان آریا
     </div>
    </div>
    <nav class="nav-menu"><button class="nav-btn active-btn" onclick="showPage('home')">🏠 خانه</button> <button class="nav-btn" onclick="showPage('products')">🏭 محصولات</button> <button class="nav-btn" onclick="showPage('about')">ℹ️ درباره ما</button>
@@ -1768,7 +1782,7 @@ body {
     </div>
    </div>
    <div class="hero-description" id="heroDescription">
-    تولید کننده و وارد کننده انواع دستگاه‌های بسته‌بندی صنعتی با بالاترین کیفیت و تکنولوژی روز دنیا
+    تولید کننده انواع دستگاه‌های بسته‌بندی صنعتی با بالاترین کیفیت و تکنولوژی روز دنیا
    </div>
   </main><!-- Products Page -->
   <section id="products" class="page">
@@ -1782,7 +1796,7 @@ body {
    <h1 class="page-title" id="aboutTitle" data-text="درباره ما">درباره ما</h1>
    <div class="about-content">
     <div class="about-icon">
-  <img src="https://uploadkon.ir/uploads/7c2e03_25czxdcv-removebg-preview.png" style="width:150px; height:150px; object-fit:center;" />
+  <img src="https://uploadkon.ir/uploads/7c2e03_25czxdcv-removebg-preview.png" style="width:150px; height:150px;" />
 </div>
 
     <p class="about-text" id="aboutText">  
