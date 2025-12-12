@@ -562,9 +562,9 @@ body {
   width: 100%;
   max-width: 1000px;
   height: 350px;
-  background: linear-gradient(135deg, #1e3a8a, #1e40af, #2563eb, #3b82f6);
-  background-size: 300% 300%;
-  animation: gradientFlow 8s ease infinite;
+  background: linear-gradient(135deg, #61b9ff, #4aa3ff, #388cff, #2e74f0, #235cd4, #1b47b6, #143b9d, #1b47b6, #235cd4, #2e74f0, #388cff, #4aa3ff); 
+  background-size: 400% 400%;
+  animation: blueFlow 3s ease-in-out infinite;
   border-radius: 30px;
   overflow: hidden;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
@@ -574,6 +574,11 @@ body {
   position: relative;
   border: 2px solid rgba(59, 130, 246, 0.3);
   transition: all 0.3s ease;
+}
+@keyframes blueFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 @media (max-width: 768px) {
@@ -1856,6 +1861,11 @@ body {
   object-fit: contain;
   display: block;
 }
+@keyframes blueFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
 
 }
 
@@ -1895,19 +1905,22 @@ body {
   <main id="home" class="page active">
    <div class="hero-video-container" id="heroVideoContainer">
     <div class="hero-video-placeholder">
-    <div style="display:flex; flex-direction:column; justify-content:center; align-items:center; height:100vh; text-align:center;">
-    <div style="font-size:80px; font-weight:bold; margin-bottom:20px;">
-        آسیا      تابان      آریا
+    <div class="hero-video-placeholder" style="height:auto; padding:20px 10px; display:flex; flex-direction:column; align-items:center; justify-content:center;">
+
+    <div style="font-size:42px; font-weight:900; margin-bottom:15px; text-align:center; line-height:1.5;">
+        آسیا تابان آریا
     </div>
 
     <img src="https://uploadkon.ir/uploads/7c2e03_25czxdcv-removebg-preview.png"
-         style="width:150px; height:150px;" />
+         style="width:120px; height:120px; object-fit:contain;" />
+
+</div>
+
+
+
+
     </div>
-
-
-
-    </div>
-    <div class="cinema-controls"><button class="cinema-btn">🎬 حالت سینما</button> <button class="cinema-btn">📽️ تمام صفحه</button>
+    
     </div>
    </div>
    <div class="hero-description" id="heroDescription">
@@ -1956,7 +1969,7 @@ body {
 ✉️ ایمیل  
 asiatabanearia@yahoo.com
 📍 آدرس کارخانه  
-تهران 5 کیلومتر بعد از فرودگاه امام شهرک صنعتی شمس اباد بلوار گلاذین - گلاذین 3 پلاک 4 شرکت آسیا تابان آریا
+تهران 5 کیلومتر بعد از فرودگاه امام شهرک صنعتی شمس اباد بلوار گل اذین - گل اذین 3 پلاک 4 شرکت آسیا تابان آریا
 
 
    </div>
@@ -2323,7 +2336,7 @@ const products = [
   name: 'نوار نقاله روی‌میزی',
   icon: '🧰',
   imageUrl: 'https://uploadkon.ir/uploads/ccb305_25IMG-0172-removebg-preview.png',
-  videoUrl: 'https://uploadkon.ir/uploads/af8812_251127-1-5-1-.mp4',
+  videoUrl: 'https://uploadkon.ir/uploads/5fff12_251127-1-6-.mp4',
   desc: 'نوار نقاله روی‌میزی مناسب جابجایی بسته‌ها در خطوط بسته‌بندی.',
   badge: 'ویژه',
   specs: [
